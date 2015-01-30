@@ -14,7 +14,7 @@
 			}
 			#all{
 				width: 930px;
-				margin: 25px auto 200px;
+				margin: 25px auto;
 			}
 			.bottom{
 				margin-top: 25px;
@@ -88,7 +88,144 @@
 				font-family: 'helvetica';
 				font-weight: bold;
 			}
+			footer{
+				text-align: center;
+				margin: 25px;
+			}
+			.f{
+				padding-right: 10px;
+			}
+			#pat1{
+				width: 274px;
+			}
+			.pat div{
+				display: inline-block;
+				width: 274px;
+				height: 274px;
+			}
+			@media screen and (max-width:640px){
+				body{
+					margin: 0px;
+					font-family: 'Nanum Gothic Coding', serif;
+					font-size: 0.95em;
+					line-height: 1em;
+					color: #646464;
+					word-spacing: -4px;
+				}
+				#all{
+					width: 640px;
+					margin: 25px auto;
+				}
+				.bottom{
+					margin-top: 25px;
+				}
+				.top{
+					width: 100%;
+				}
+				header{
+					width: 100%;
+					height: 124px;
+					background-color: #003399;
+				}
+				.logo{
+					padding-bottom: 39px;
+					border-bottom: solid #b2b2b2 1px;
+				}
+				.logo1{
+					width: 333px;
+					margin: 22px 52px;
+				}
+				.logo2{
+					width: 466px;
+					margin: 50px 52px;
+				}
+				article{
+					width:84%;
+					background-color: #f9f9f9;
+					padding: 46px;
+				}
+				.pat img{
+					width: 274px;
+				}
+				.pat{
+					padding-bottom: 46px;
+					border-bottom: solid #b2b2b2 1px;
+				}
+				.dnx{
+					width: 140px;
+					margin: 42px 97px;
+				}
+				.thr{
+					width: 395px;
+					margin: 11px;
+				}
+				b{
+					font-weight: bold;
+					color: #003399;
+					font-size: 1.1em;
+					line-height: 3em;
+				}
+				span{
+					font-weight: bold;
+				}
+				.gae{
+					margin-top: 35px;
+					margin-left: 10px;
+				}
+				.p{
+					margin-top: 35px;
+					margin-left: 10px;
+				}
+				.p1{
+					float: left;
+					margin-right: 87px;
+				}
+				.E{
+					font-family: 'helvetica';
+					font-weight: normal;
+				}
+				.E1{
+					font-family: 'helvetica';
+					font-weight: bold;
+				}
+				footer{
+					text-align: center;
+					margin: 25px;
+				}
+				.f{
+					padding-right: 10px;
+				}
+				#pat1{
+					width: 274px;
+				}
+				.pat div{
+					display: inline-block;
+					width: 274px;
+					height: 274px;
+				}
+			}
 		</style>
+		<script type="text/javascript">
+			var p = document.getElementsByClassName('pp');
+			function on () {
+				p[0].src="BandPhoto.png";
+			}
+			function out () {
+				p[0].src="pat1.png";
+			}
+			function on1 () {
+				p[1].src="m.png";
+			}
+			function out1 () {
+				p[1].src="pat2.png";
+			}
+			function on2 () {
+				p[2].src="n.png";
+			}
+			function out2 () {
+				p[2].src="pat3.png";
+			}
+		</script>
 	</head>
 	<body>
 		<div id="all">
@@ -98,14 +235,14 @@
 				</header>
 				<article>
 					<div class="pat">
-						<img src="pat1.png" alt="no image">
-						<img src="pat2.png" alt="no image">
-						<img src="pat3.png" alt="no image">
+						<img src="pat1.png" alt="no image" onmouseover="on()" onmouseout="out()" class="pp">
+						<img src="pat2.png" alt="no image" onmouseover="on1()" onmouseout="out1()" class="pp">
+						<img src="pat3.png" alt="no image" onmouseover="on2()" onmouseout="out2()" class="pp">
 					</div>
 					<div class="gae">
 						<b>개발인력</b>
 						<p><span>대표 : </span>권은경 (계원예술대학 시각디자인 교수 / 여성 <span class="E">CEO)<span></p>
-						<p><span><span class="E1">DESIGN</span> : </span>계원예술대학 교수진</p>
+						<p><span>DESIGN : </span>계원예술대학 교수진</p>
 						<p><span>웨어러블 디바이스 : </span>삼성전자 출신 <span class="E">H/W, S/W, Mechanizm</span> 각 분야 <span class="E">20</span>년 이상 경력보유자 (<span class="E">LG</span> 포켓포토 개발 핵심인력)</p>
 						<p><span>앱, 게임서버 : </span>관련분야 <span class="E">10</span>년 이상 경력보유자 (온라인게임, <span class="E">Android / iOS</span>용 앱 및 게임서버 다수 개발)</p>
 					</div>
@@ -137,6 +274,13 @@
 					</div>
 				</article>
 			</div>
+			<footer>
+				<span class="f"><span class="E">copyright</span>ⓒ㈜디엔스</span>
+				<span class="f">서초구 서초대로 <span class="E">1</span>길 <span class="E">10</span></span>
+				<span class="f"><span class="E">T : 02-592-0105</span></span>
+				<span class="f"><span class="E">F : 02-6455-0107</span></span>
+				<span class="f"><span class="E">design4nx@gmail.com</span></span>
+			</footer>
 		</div>
 	</body>
 </html>
